@@ -1,13 +1,140 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  border-style: solid;
+  background-color: rgb(112, 113, 116);
+  border-color: transparent;
+  border-width: 2px;
+  background-clip: padding-box;
+}
+
+.siderBar {
+  width: 248px;
+  overflow-y: auto;
+  height: 100%;
+  padding: 16px;
+  text-align: left;
+  position: absolute;
+}
+
+.siderBar-title {
+  color: rgb(121, 121, 121);
+  border-bottom: 1px solid rgb(242, 243, 244);
+  padding: 4px 0px 3px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+.siderBar-content {
+  padding-left: 16px;
+}
+.siderBar-content-link {
+  color: #171d24;
+  display: block;
+  padding: 11px 0 10px 0;
+  text-decoration: none;
+}
+.siderBar-content-link:hover {
+  color: #147dd4;
+}
+
+.siderBar-content-link.active {
+  color: #147dd4;
+}
+
+.system-intro {
+  width: calc(100% - 280px);
+  position: absolute;
+  right: 0;
+  text-align: left;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.margin-top-40 {
+  margin-top: 40px;
+}
+
+.border-radius-1 {
+  border: 1px solid rgb(242, 243, 244);
+  padding: 8px;
+  width: 100%;
+}
+
+.padding-5 {
+  padding: 5px 0;
+}
+
+.padding-24 {
+  padding: 24px;
+}
+
+.system-intro-design {
+  display: flex;
+  align-items: center;
+  padding: 28px;
+}
+
+.icon-design {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.display-flex-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showMore {
+  height: 48px;
+  width: 100%;
+  cursor: pointer;
+  background: #fff;
+}
+
+.showMore:hover {
+  background-color: rgb(232, 233, 234);
+  color: rgb(50, 62, 77);
+  border-color: rgb(232, 233, 234);
+}
+
+.title {
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: rgb(23, 29, 36);
+}
+
+.usage {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: rgb(23, 29, 36);
 }
